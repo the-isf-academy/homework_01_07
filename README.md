@@ -1,7 +1,7 @@
 #  Homework 1.7
 
-This homework will help you practice working with lines in slope-intercept form (`y=mx +b`) in preparation for our next lab.
+This homework will help you practice generating random numbers and searching using for loops.
 
-If you need a refresher on slope-intercept form of a line, you can watch this [Khan Academy video](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:forms-of-linear-equations/x2f8bb11595b61c86:intro-to-slope-intercept-form/a/introduction-to-slope-intercept-form).
+If you're interested in random number generation, you can [read more about it here](https://www.howtogeek.com/183051/htg-explains-how-computers-generate-random-numbers/).
 
-**💻 Run `test_homework.py` in Terminal to check your work!**
+**💻 Write your code in hw_01_07.py and run `test_homework.py` in Terminal to check your work!**
