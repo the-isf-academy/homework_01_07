@@ -36,7 +36,7 @@ def make_rand_combination():
     output: list of ints
 
     NOTE: You can get a random number by calling the function randit(MIN, MAX). This function
-    takes two parameters, MIN (the minimum random value the function could return) append
+    takes two parameters, MIN (the minimum random value the function could return) and
     MAX (the maximum random value the function could return).
 
         >>> randint(0,4)
