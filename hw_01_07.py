@@ -45,6 +45,7 @@ def make_rand_combination():
         >>> randint(0,2)
         1
     """
+    # 💻 WRITE CODE HERE -- DELETE THIS COMMENT AND pass
     pass
 
 def break_combination(lock):
@@ -63,4 +64,5 @@ def break_combination(lock):
     lock.text_combination(COMBINATION) where COMBINATION is the combination you
     want to test.
     """
+    # 💻 WRITE CODE HERE -- DELETE THIS COMMENT AND pass
     pass
