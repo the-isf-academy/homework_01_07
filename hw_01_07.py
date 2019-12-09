@@ -61,7 +61,7 @@ def break_combination(lock):
     output: combination list of 4 ints
 
     NOTE: You can test to see if a combination opens the lock by calling
-    lock.text_combination(COMBINATION) where COMBINATION is the combination you
+    lock.test_combination(COMBINATION) where COMBINATION is the combination you
     want to test.
     """
     # 💻 WRITE CODE HERE -- DELETE THIS COMMENT AND pass
