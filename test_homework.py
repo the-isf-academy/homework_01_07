@@ -21,7 +21,7 @@ def set_lock():
     print('\n --------------------------')
     print('|  🔒 setting the lock 🔒  |')
     print(' --------------------------\n')
-    set_combination = input('Input 4 digit combination or press enter to generate a random password:')
+    set_combination = input('Input 4 digit combination or press enter to generate a random password: ')
     if len(set_combination) == 4:
         set_combination_list = []
         for digit in set_combination:
@@ -37,7 +37,7 @@ def set_lock():
                 break
     else:
         set_combination_list = make_rand_combination()
-    lk = lock.lock(combo = set_combination_list)
+    lk = lock.Lock(combo = set_combination_list)
     return lk
 
 def open_lock(lk):
@@ -46,7 +46,7 @@ def open_lock(lk):
     print(' --------------------------\n')
 
     while(True):
-        open_combination = input('Input the 4 digit combination for the lock or press enter to break the lock:')
+        open_combination = input('Input the 4 digit combination for the lock or press enter to break the lock: ')
         if len(open_combination) == 4:
             open_combination_list = []
             for digit in open_combination:

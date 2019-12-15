@@ -14,7 +14,7 @@
 # teacher about it if you're interested.
 # =============================================================================
 
-class lock():
+class Lock():
 
     def __init__(self, combo = [0,0,0,0]):
         self.combination = combo
