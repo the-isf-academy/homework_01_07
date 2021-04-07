@@ -46,7 +46,10 @@ def make_rand_combination():
         1
     """
     # 💻 WRITE CODE HERE -- DELETE THIS COMMENT AND pass
-    pass
+    combo = []
+    for i in range(4):
+        combo.append(randint(0,9))
+    return combo
 
 def break_combination(lock):
     """
@@ -65,4 +68,27 @@ def break_combination(lock):
     want to test.
     """
     # 💻 WRITE CODE HERE -- DELETE THIS COMMENT AND pass
-    pass
+
+    # ITERATIVE SOLUTION:
+    for i in range(0,10):
+        for j in range(0,10):
+            for k in range(0,10):
+                for l in range(0,10):
+                    if lock.test_combination([i, j, k, l]):
+                        return [i, j, k, l]
+
+    # RECURSIVE SOLUTION:
+    # combo_so_far = []
+    # return(break_combination_recursive(lock, combo_so_far))
+
+def break_combination_recursive(lock, combo_so_far):
+    if len(combo_so_far) == 4:
+        if lock.test_combination(combo_so_far):
+            return combo_so_far
+        else:
+            return False
+    else:
+        for i in range(0,10):
+            result = break_combination_recursive(lock, combo_so_far + [i])
+            if result:
+                return result
